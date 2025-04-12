@@ -8,9 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next export",
-    "postexport": "cp public/CNAME out/CNAME",
-    "clean-docs": "rm -rf docs && mkdir docs",
-    "deploy": "npm run build && npm run export && npm run postexport && npm run clean-docs && mv out/* docs/"
+    "postbuild": "copy public\\CNAME .next\\static\\CNAME",
+    "clean-docs": "rmdir /s /q docs && mkdir docs",
+    "deploy": "npm run build && npm run postbuild && npm run clean-docs && xcopy .next\\static docs /E /H /C /I"
   },
   "dependencies": {
     "next": "15.3.0",
