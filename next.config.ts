@@ -2,7 +2,9 @@
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
-  basePath: '', // Leave empty if using root of custom domain
+  images: {
+    unoptimized: true,
+  },
 };
 
 module.exports = nextConfig;
