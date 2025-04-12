@@ -1,0 +1,153 @@
+.experienceContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.experienceCard {
+  background-color: var(--card);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.experienceHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  color: #8b949e;
+  font-size: 0.9rem;
+}
+
+.experienceTitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.role {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+.at {
+  font-weight: normal;
+  color: #8b949e;
+}
+
+.company {
+  color: #ffffff;
+}
+
+.acquisitionLabel {
+  background-color: #ffd500;
+  color: #000000;
+  padding: 0.25rem 0.75rem;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.companyInfo {
+  color: #8b949e;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.description {
+  color: #c9d1d9;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.tag {
+  background-color: var(--background-color);
+  color: #8b949e;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+}
+
+.contributionsToggle {
+  display: flex;
+  align-items: center;
+  margin: 0px auto;
+  width: 100%;
+  text-align: center;
+  background-color: var(--background-color);
+  border: none;
+  color: var(--font-color);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 0.2s all;
+}
+
+.contributionsToggleText {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  gap: 0.75rem;
+}
+
+.contributionsToggle:hover {
+  background-color: #161b22;
+  color: #c9d1d9;
+}
+
+.codeIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.contributionsList {
+  list-style-type: none;
+  padding: 0;
+  margin: 1.5rem 0 0 0;
+}
+
+.contributionItem {
+  padding: 0.4rem 0;
+  color: var(--font-color);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.contributionItem:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 14px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #8b949e;
+}
+
+@media (max-width: 600px) {
+  .experienceHeader {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .experienceTitle {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .tags {
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,117 @@
+.profile {
+  padding: 1rem 0;
+}
+
+.profileHeader {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.8rem;
+}
+
+.profileImage {
+  flex-shrink: 0;
+}
+
+.avatar {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profileTitle h1 {
+  font-size: 2rem;
+  margin-bottom: 0rem;
+}
+
+.profileTitle p {
+  color: #a0a0a0;
+  font-size: 1rem;
+}
+
+.profileContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.paragraph {
+  font-size: 1.1rem;
+  line-height: 1.65;
+}
+
+.link {
+  text-decoration: underline;
+  color: var(--link-color);
+}
+
+.codeBlockWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.codeBlockToggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 30%;
+  margin-left: 0.05rem;
+  cursor: pointer;
+  padding: 0px;
+  color: var(--text-color);
+  transition: background-color 0.2s;
+  vertical-align: middle;
+}
+
+.codeBlockToggle:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.codeIcon {
+  transition: transform 0.2s ease;
+}
+
+.codeBlockContent {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  z-index: 10;
+  width: 300px;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.codeBlockContent p {
+  margin-bottom: 0.5rem;
+}
+
+.codeBlockContent p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 500px) {
+  .profileHeader {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .profileTitle h1 {
+    font-size: 1.75rem;
+  }
+
+  .codeBlockContent {
+    width: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
