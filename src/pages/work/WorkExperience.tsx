@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import styles from "../styles/WorkExperience.module.css";
-import { CodeIcon } from "./ui/Icons";
+import styles from "./WorkExperience.module.css";
+import { CodeIcon } from "@/components/ui/Icons";
 
 type JobExperience = {
   id: string;

@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Layout from "../components/ui/Layout";
-import WorkExperience from "../components/WorkExperience";
-import styles from "../styles/Work.module.css";
+import styles from "./Work.module.css";
+import Layout from "@/components/ui/Layout";
+import WorkExperience from "./WorkExperience";
 
 export default function Work() {
   return (

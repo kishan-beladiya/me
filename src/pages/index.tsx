@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Layout from "@/components/ui/Layout";
-import Profile from "@/components/Profile";
+import Profile from "@/pages/profile/Profile";
 
 export default function Home() {
   return (

@@ -63,8 +63,11 @@
 @media (max-width: 500px) {
   .navbar {
     flex-direction: column;
+    border-radius: 2rem;
+    transition: background-color 0.2s;
     gap: 1rem;
-    padding: 1rem;
+    font-size: 0.75rem;
+    margin-bottom: 3rem;
   }
 
   .navLinks {
@@ -72,8 +75,23 @@
     justify-content: space-between;
   }
 
-  .sayHi {
+  .navLink {
     width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 0.25rem 0rem;
+    font-size: 0.9rem;
+    gap: 0.5rem;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .sayHi {
+    /* width: 100%; */
+    text-align: center;
+    padding: 0.25rem 0rem;
     justify-content: center;
   }
 

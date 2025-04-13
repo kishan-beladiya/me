@@ -1,19 +1,45 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "../styles/Profile.module.css";
+import styles from "./Profile.module.css";
 
 const CodeBlock: React.FC<{ id: string; children: React.ReactNode }> = ({
   id,
   children,
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [popupPositionY, setPopupPositionY] = useState<
+    "popupTop" | "popupBottom"
+  >("popupBottom");
+  const [popupPositionX, setPopupPositionX] = useState<
+    "popupLeft" | "popupRight"
+  >("popupRight");
+
+  const togglePopup = (event: React.MouseEvent<HTMLButtonElement>) => {
+    const buttonRect = event.currentTarget.getBoundingClientRect();
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+    const popupHeight = 300;
+    const popupWidth = 300;
+
+    const shouldShowAbove = buttonRect.bottom + popupHeight > viewportHeight;
+    const shouldAlignLeft = buttonRect.right + popupWidth > viewportWidth;
+
+    setPopupPositionY(shouldShowAbove ? "popupTop" : "popupBottom");
+    setPopupPositionX(shouldAlignLeft ? "popupLeft" : "popupRight");
+    setIsExpanded(!isExpanded);
+  };
+
+  useEffect(() => {
+    console.log("Popup Position X:", popupPositionX);
+    console.log("Popup Position Y:", popupPositionY);
+  }, [popupPositionX, popupPositionY]);
 
   return (
     <span className={styles.codeBlockWrapper}>
       <button
         className={styles.codeBlockToggle}
-        onClick={() => setIsExpanded(!isExpanded)}
+        onClick={togglePopup}
         aria-expanded={isExpanded}
         aria-controls={`code-${id}`}
       >
@@ -24,9 +50,9 @@ const CodeBlock: React.FC<{ id: string; children: React.ReactNode }> = ({
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           className={`lucide lucide-chevrons-left-right relative -top-[1.35px] inline-block`}
         >
           <path d="m9 7-5 5 5 5"></path>
@@ -34,7 +60,18 @@ const CodeBlock: React.FC<{ id: string; children: React.ReactNode }> = ({
         </svg>
       </button>
       {isExpanded && (
-        <div className={styles.codeBlockContent} id={`code-${id}`}>
+        <div
+          className={`${styles.codeBlockContent} ${
+            popupPositionX == "popupLeft"
+              ? styles.popupLeft
+              : popupPositionX === "popupRight"
+              ? styles.popupRight
+              : popupPositionY === "popupTop"
+              ? styles.popupTop
+              : styles.popupBottom
+          }`}
+          id={`code-${id}`}
+        >
           {children}
         </div>
       )}

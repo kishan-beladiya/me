@@ -88,6 +88,29 @@
   line-height: 1.5;
   max-height: 300px;
   overflow-y: auto;
+  max-width: calc(100vw - 20px);
+
+  /* Vertical positioning */
+  .popupTop {
+    bottom: calc(100% + 10px);
+    top: auto;
+  }
+
+  .popupBottom {
+    top: calc(100% + 10px);
+    bottom: auto;
+  }
+
+  /* Horizontal positioning */
+  .popupLeft {
+    right: 0;
+    left: auto;
+  }
+
+  .popupRight {
+    left: 0;
+    right: auto;
+  }
 }
 
 .codeBlockContent p {
@@ -100,8 +123,8 @@
 
 @media (max-width: 500px) {
   .profileHeader {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    text-align: left;
     gap: 1rem;
   }
 
