@@ -79,7 +79,7 @@
   top: calc(100% + 10px);
   left: 0;
   z-index: 10;
-  width: 300px;
+  width: 100%;
   background-color: #1e1e1e;
   border-radius: 8px;
   padding: 1rem;
@@ -121,6 +121,18 @@
   margin-bottom: 0;
 }
 
+.popupCenter {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: 1000;
+  width: 320px;
+  max-width: 90vw;
+  max-height: 80vh;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+}
+
 @media (max-width: 500px) {
   .profileHeader {
     flex-direction: row;
@@ -136,5 +148,11 @@
     width: 250px;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .popupCenter {
+    width: 95vw;
+    max-width: 95vw;
+    padding: 0.7rem;
   }
 }

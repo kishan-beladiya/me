@@ -10,7 +10,7 @@ export default function Work() {
         <title>Work Experience - Kishan Beladiya</title>
         <meta
           name="description"
-          content="Professional experience of Kishan Beladiya, Software Development Engineer"
+          content="Professional work experience of Kishan Beladiya, Software Development Engineer"
         />
       </Head>
       <main className={styles.main}>

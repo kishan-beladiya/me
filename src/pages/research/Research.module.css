@@ -1,0 +1,44 @@
+.researchContainer {
+  max-width: 800px;
+  border-radius: 18px;
+  color: #e5e5e5;
+  min-height: 70vh;
+}
+.headerSection {
+  border-bottom: 1.5px solid #282828;
+  margin-bottom: 2.2rem;
+  padding-bottom: 1.2rem;
+}
+.title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 1.1rem;
+  color: #f3b13a;
+  letter-spacing: -1px;
+}
+.meta {
+  font-size: 1.05rem;
+  color: #bdbdbd;
+  margin-bottom: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.section {
+  margin-bottom: 2.5rem;
+}
+.abstract {
+  font-size: 1.13rem;
+  line-height: 1.7;
+  margin-top: 1rem;
+  color: #e5e5e5;
+}
+
+@media (max-width: 700px) {
+  .researchContainer {
+    padding: 1.2rem 0.5rem;
+  }
+  .title {
+    font-size: 1.3rem;
+  }
+}

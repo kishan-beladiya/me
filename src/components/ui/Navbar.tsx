@@ -43,6 +43,22 @@ const Navbar: React.FC = () => {
           Work
         </Link>
         <Link
+          href="/research"
+          className={`${styles.navLink} ${
+            currentPath === "/research" ? styles.active : ""
+          }`}
+        >
+          <span className={styles.icon}>
+            <SvgIcon
+              src="/svg/projects.svg"
+              width={16}
+              height={16}
+              color="#9898a1"
+            />
+          </span>{" "}
+          Research
+        </Link>
+        <Link
           href="/projects"
           className={`${styles.navLink} ${
             currentPath === "/projects" ? styles.active : ""
@@ -85,7 +101,7 @@ const Navbar: React.FC = () => {
               color="#9898a1"
             />
           </span>
-          Say Hi
+          {/* Say Hi */}
         </Link>
       </div>
     </nav>

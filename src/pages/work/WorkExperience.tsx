@@ -24,9 +24,22 @@ const WorkExperience: React.FC = () => {
 
   const experiences: JobExperience[] = [
     {
+      id: "amazon",
+      location: "Bangalore, India",
+      period: "June 2025 – Present",
+      role: "Software Development Engineer 1",
+      company: "Amazon",
+      companyInfo:
+        "Working in Amazon's Payments team, focusing on building scalable and efficient payment solutions.",
+      description:
+        "Mainly working on building scalable and efficient backend payment solutions.",
+      tags: ["Java", "Spring boot", "Spring MVC", "Backend engineering"],
+      contributions: [],
+    },
+    {
       id: "bik",
       location: "Bangalore, India",
-      period: "July 2024 – Present",
+      period: "July 2024 – May 2025",
       role: "SDE - 1",
       company: "BIK.ai (YC S20)",
       companyInfo:
@@ -44,6 +57,7 @@ const WorkExperience: React.FC = () => {
         "PostgreSQL",
       ],
       contributions: [
+        "Optimized Firestore queries to reduce over 848M unnecessary reads, resulting in monthly cost saving of $509 (10.7% of total Firestore cost).",
         "Led the end-to-end development of a feature to cluster messages using vector embeddings",
         "Built a comprehensive dashboard to display clustering results",
         "Working on manifest AI - shopping AI assistant",
