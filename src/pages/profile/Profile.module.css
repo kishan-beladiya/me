@@ -16,6 +16,7 @@
 .avatar {
   border-radius: 50%;
   object-fit: cover;
+  border: 2px solid #f3b13a;
 }
 
 .profileTitle h1 {
@@ -88,7 +89,9 @@
   line-height: 1.5;
   max-height: 300px;
   overflow-y: auto;
-  max-width: calc(100vw - 20px);
+  max-width: calc(100vw - 100px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
 
   /* Vertical positioning */
   .popupTop {
@@ -151,7 +154,7 @@
   }
 
   .popupCenter {
-    width: 95vw;
+    width: 80vw;
     max-width: 95vw;
     padding: 0.7rem;
   }

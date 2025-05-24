@@ -6,15 +6,15 @@
 }
 
 .pageTitle {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #a0a0a0;
+  font-size: 2rem;
 }
 
 .introText {
   font-size: 1.1rem;
   line-height: 1.6;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   color: #a0a0a0;
 }

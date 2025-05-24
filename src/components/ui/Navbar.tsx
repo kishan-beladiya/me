@@ -98,7 +98,7 @@ const Navbar: React.FC = () => {
               src="/svg/chat.svg"
               width={16}
               height={16}
-              color="#9898a1"
+              color="#18181b"
             />
           </span>
           {/* Say Hi */}

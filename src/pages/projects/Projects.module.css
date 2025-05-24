@@ -16,7 +16,7 @@
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: -1.2rem;
-  color: #f3b13a;
+  color: #a0a0a0;
   letter-spacing: -1px;
   text-align: left;
 }
@@ -25,7 +25,6 @@
   background-color: var(--card, #23232b);
   border-radius: 8px;
   padding: 1.5rem;
-  /* box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1); */
   margin-bottom: 0.5rem;
 }
 
@@ -96,9 +95,6 @@
   }
   .title {
     font-size: 1.3rem;
-  }
-  .experienceCard {
-    padding: 1rem 0.7rem 0.8rem 0.7rem;
   }
   .experienceHeader {
     flex-direction: column;

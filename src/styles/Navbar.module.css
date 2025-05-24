@@ -50,8 +50,7 @@
 }
 
 .sayHiButton {
-  /* background-color: var(--button-color); */
-  background-color: var(--yellow);
+  background-color: var(--yellow-light);
   color: var(--font-color);
   border-radius: 1.5rem;
   padding: 0.3rem 0.7rem;
@@ -74,7 +73,7 @@
     transition: background-color 0.2s;
     gap: 1rem;
     font-size: 0.75rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
 
   .navLinks {

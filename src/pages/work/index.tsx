@@ -14,7 +14,7 @@ export default function Work() {
         />
       </Head>
       <main className={styles.main}>
-        <h1 className={styles.pageTitle}>Employment History</h1>
+        <div className={styles.pageTitle}>Employment History</div>
         <p className={styles.introText}>
           I have been fortunate to work with some amazing teams. I have worked
           mostly with startups but also with some large enterprises. Here is a
