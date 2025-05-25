@@ -27,7 +27,7 @@ const WorkExperience: React.FC = () => {
       id: "amazon",
       location: "Bangalore, India",
       period: "June 2025 – Present",
-      role: "Software Development Engineer 1",
+      role: "SDE - 1",
       company: "Amazon",
       companyInfo:
         "Working in Amazon's Payments team, focusing on building scalable and efficient payment solutions.",
