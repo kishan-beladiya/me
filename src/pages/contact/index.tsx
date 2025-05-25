@@ -11,18 +11,18 @@ const sayHiLinks = [
     href: "mailto:kishanbeladiya@gmail.com",
     icon: "/svg/email.svg",
   },
-  {
-    label: "Resume",
-    value: "View Resume",
-    href: "https://drive.google.com/file/d/1RaOw5RGLiLJAXRuUO3OS7BS9bsVVLNZ-/view?usp=sharing",
-    icon: "/svg/doc.svg",
-  },
-  {
-    label: "Leetcode",
-    value: "@kishanbeladiya925",
-    href: "https://leetcode.com/u/kishanbeladiya925/",
-    icon: "/svg/leetcode.svg",
-  },
+  // {
+  //   label: "Resume",
+  //   value: "View Resume",
+  //   href: "https://drive.google.com/file/d/1RaOw5RGLiLJAXRuUO3OS7BS9bsVVLNZ-/view?usp=sharing",
+  //   icon: "/svg/doc.svg",
+  // },
+  // {
+  //   label: "Leetcode",
+  //   value: "@kishanbeladiya925",
+  //   href: "https://leetcode.com/u/kishanbeladiya925/",
+  //   icon: "/svg/leetcode.svg",
+  // },
   {
     label: "GitHub",
     value: "@kishan-beladiya",
